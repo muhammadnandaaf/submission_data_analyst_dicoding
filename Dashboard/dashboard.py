@@ -64,7 +64,7 @@ def create_monthly_rent(df):  # Menyiapkan monthly rent
     monthly_rent_df = monthly_rent_df.reindex(ordered_months, fill_value=0)
     return monthly_rent_df
 
-day_df = pd.read_csv("Processed_day_df.csv")
+day_df = pd.read_csv("Dashboard/Processed_day_df.csv")
 
 # Membuat Komponen Filter
 min_date = pd.to_datetime(day_df['date']).dt.date.min()
